@@ -1,6 +1,6 @@
 # Güvenli Koridor
 
-Gece tek başına yürüyen yayalar için daha aydınlık, canlı ve güvenli güzergahlar önermeyi hedefleyen Expo tabanlı mobil uygulama.
+Android Studio ile geliştirilen, gece tek başına yürüyen yayalar için daha aydınlık, canlı ve güvenli güzergahlar önermeyi hedefleyen bir mobil uygulama. Projenin ilk taslak ve üretim sürecinde Google AI Studio'dan yararlanılmıştır.
 
 ## Proje fikri
 
@@ -8,45 +8,35 @@ Güvenli Koridor, yalnızca en kısa veya en hızlı rotayı bulmak yerine güve
 
 ## Mevcut durum
 
-Bu sürüm, konum izni akışını ve zamana göre otomatik gündüz/gece temasını içeren ilk Expo MVP ekranını sunar.
+Bu sürüm, konum izni akışını ve zamana göre otomatik gündüz/gece temasını içeren ilk MVP ekranını sunar.
 
 - Konum izni isteme ve izin engellendiğinde cihaz ayarlarını açma
 - 19:00-06:00 arasında otomatik gece teması
 - Erişilebilirlik etiketleri ve yüklenme durumu
 - Gündüz ve gece renk tokenları
 
-## Teknolojiler
+## Geliştirme ortamı
 
-- Expo SDK 57
-- React Native 0.86
-- React 19
-- TypeScript
-- `expo-location`
-- `react-native-web`
+- Android Studio
+- Android SDK ve Android Emulator
+- Google AI Studio ile oluşturulan tasarım ve uygulama çıktıları
 
-## Kurulum
+## Kurulum ve çalıştırma
 
-```bash
-npm install
-```
+1. Repository'yi klonlayın:
 
-## Çalıştırma
+	```bash
+	git clone https://github.com/sumeyyeonat/guvenli_koridor_app.git
+	cd guvenli_koridor_app
+	```
 
-Geliştirme sunucusunu başlatmak için:
+2. Projeyi Android Studio ile açın.
 
-```bash
-npm start
-```
+3. Android SDK bağımlılıklarının yüklenmesini ve proje senkronizasyonunun tamamlanmasını bekleyin.
 
-Platforma göre çalıştırmak için:
+4. Bir Android Emulator başlatın veya USB hata ayıklaması açık bir Android cihaz bağlayın.
 
-```bash
-npm run android
-npm run ios
-npm run web
-```
-
-Expo Go veya emülatör kullanırken terminalde gösterilen QR kodunu tarayabilirsiniz. Konum izni özelliğini test etmek için fiziksel cihaz ya da konum simülasyonu destekleyen bir emülatör kullanılması önerilir.
+5. Android Studio'daki **Run** düğmesiyle uygulamayı çalıştırın. Konum izni özelliğini test etmek için emülatörde bir konum seçin veya fiziksel cihaz kullanın.
 
 ## Yol haritası
 
