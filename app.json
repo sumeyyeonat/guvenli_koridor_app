@@ -1,11 +1,19 @@
 {
   "expo": {
-    "name": ".expo-scaffold",
-    "slug": ".expo-scaffold",
+    "name": "Güvenli Koridor",
+    "slug": "guvenli-koridor",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Güvenli Koridor, güvenli rota önermek için konumunuzu kullanır."
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
